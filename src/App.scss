@@ -3,23 +3,26 @@
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
+  user-select: none;
 }
 .light {
-  --clr-bg: #fcfcfc;
+  --clr-bg: #edf5e1;
   --clr-bg-alt: #fff;
-  --clr-fg: #555;
-  --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  --clr-fg: #444;
+  --clr-fg-alt: #222;
+  --clr-primary: #05386b;
+  --clr-primary-alt: #5cdb95;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: #2a2f4c;
+  --clr-bg: #030217;
+  --clr-bg-alt: rgb(22 28 41/33%);
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --clr-primary: #807ae8;
+  --clr-primary-alt: #706aec;
+  --shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 main {
   max-width: 1100px;
@@ -33,6 +36,20 @@ main {
   text-align: center;
   margin-bottom: 1em;
   text-transform: uppercase;
+
+  &:hover {
+    &::after {
+      border-color: var(--clr-primary-alt);
+    }
+  }
+
+  &::after {
+    border-bottom: 0.2em solid var(--clr-primary);
+    content: '';
+    display: block;
+    margin: 0.3em auto 0;
+    width: 1.5em;
+  }
 }
 .center {
   display: flex;
@@ -88,13 +105,13 @@ main {
   overflow: hidden;
   z-index: 1;
   &:hover {
-    color: var(--clr-bg);
+    color: var(--clr-primary-alt);
     &:before {
       right: 0;
     }
   }
   &:focus {
-    color: var(--clr-bg);
+    color: var(--clr-primary-alt);
     &:before {
       right: 0;
     }

@@ -4,6 +4,25 @@
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+
+  .brand {
+    color: var(--clr-primary);
+    text-transform: uppercase;
+
+    .inverted {
+      background-color: var(--clr-primary);
+      padding: 10px;
+      color: var(--clr-bg);
+      margin-right: 10px;
+      transition: background-color 0.2s;
+    }
+
+    &:hover {
+      .inverted {
+        background-color: var(--clr-primary-alt);
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {

@@ -7,12 +7,56 @@
   .btn-outline {
     margin-right: 1em;
   }
+
+  .typed-container {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+
+    i {
+      color: red;
+
+      &:hover {
+        color: var(--clr-primary-alt);
+      }
+    }
+  }
+  .line-break {
+    height: 4px;
+    background-color: var(--clr-primary);
+    margin: 40px auto 0;
+    width: 100%;
+
+    &:hover {
+      background-color: var(--clr-primary-alt);
+    }
+  }
 }
 .about-name {
   color: var(--clr-primary);
+
+  .letter {
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--clr-primary-alt);
+    }
+  }
 }
 .about-role {
+  margin-top: 5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+}
+.about-typed {
   margin-top: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.25em;
 }
 .about-desc {
   font-size: 1rem;

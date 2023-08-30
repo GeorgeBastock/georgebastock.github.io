@@ -7,6 +7,7 @@ import Skills from './components/Skills/Skills'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Social from './components/Social/Social'
 import './App.scss'
 
 const App = () => {
@@ -15,14 +16,13 @@ const App = () => {
   return (
     <div id='top' className={`${themeName} app`}>
       <Header />
-
       <main>
+        <Social />
         <About />
-        <Projects />
         <Skills />
+        <Projects />
         <Contact />
       </main>
-
       <ScrollToTop />
       <Footer />
     </div>

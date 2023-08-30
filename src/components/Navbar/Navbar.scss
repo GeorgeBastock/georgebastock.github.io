@@ -4,6 +4,19 @@
 }
 .nav-list-item {
   margin-left: 1.5em;
+
+  .list-number {
+    color: var(--clr-primary);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+
+  &:hover {
+    .list-number {
+      color: var(--clr-primary-alt);
+    }
+  }
 }
 .app {
   .nav-hamburger {
@@ -12,6 +25,31 @@
 }
 .nav-theme {
   margin-top: 0.4em;
+
+  svg {
+    &::before {
+      content: '\f186';
+    }
+
+    &::after {
+      content: '';
+      background-color: var(--clr-primary);
+      border-radius: 50%;
+      height: 0%;
+      position: absolute;
+      transition: all 0.25s ease-in-out;
+      width: 0;
+      z-index: -1;
+    }
+
+    &:hover {
+      &::after {
+        border: 0.2em solid var(--clr-primary);
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
 }
 @media (max-width: 600px) {
   .nav-list {

@@ -4,17 +4,18 @@ import './Skills.scss'
 
 const Skills = () => {
   if (!skills.length) return null
-
   return (
     <section className='section skills' id='skills'>
-      <h2 className='section-title'>Skills</h2>
-      <ul className='skills-list'>
+      <h2 className='section-title'>Tech Stack</h2>
+      <div className='skills-list'>
         {skills.map((skill) => (
-          <li key={uniqid()} className='skills-list-item btn btn-plain'>
-            {skill}
-          </li>
+          <div key={uniqid()} className='skills-list-item'>
+            {/* {skill.img} */}
+            {skill.icon}
+            {skill.name}
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   )
 }
