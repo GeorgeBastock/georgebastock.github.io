@@ -4,6 +4,11 @@
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  h3 {
+    transition: font-size 1s;
+  }
 
   .brand {
     color: var(--clr-primary);
@@ -24,9 +29,20 @@
     }
   }
 }
-
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .header {
-    height: 6em;
+    justify-content: center;
+    align-content: center;
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
+@media (max-width: 721px) {
+  .header {
+    h3 {
+      height: 35px;
+    }
   }
 }

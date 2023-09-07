@@ -1,28 +1,115 @@
-.project {
-  padding: 2em;
-  margin: 0 auto;
-  text-align: center;
+.project-container {
+  align-items: center;
+  background-color: var(--clr-bg-alt);
+  border-radius: 1em;
   box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
-  &:hover {
-    transform: translateY(-7px);
-  }
-  .link-icon {
-    margin-left: 0.5em;
-  }
-}
-.project-description {
-  margin-top: 1em;
-}
-.project-stack {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.2em 0;
+  justify-content: space-between;
+  margin: 2em auto;
+  max-width: 950px;
+  padding: 2em;
+  text-align: center;
+  width: 95%;
+
+  &:hover {
+    img {
+      border-color: var(--clr-primary-alt);
+    }
+  }
+
+  img {
+    border-radius: 0.5em;
+    width: 30%;
+    margin: auto;
+    border: solid var(--clr-primary);
+    transition: all 0.5s;
+  }
+
+  .project-content {
+    flex-basis: 55%;
+    background: none;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 1.2em 0;
+    }
+
+    .project-skill,
+    .project-link {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .project-link {
+      margin-top: 1.2em;
+
+      a {
+        color: var(--clr-primary);
+
+        &:hover {
+          color: var(--clr-primary-alt);
+        }
+      }
+    }
+
+    .project-skill {
+      margin: 0 auto;
+
+      li {
+        background-color: var(--clr-primary);
+        border-radius: 5em;
+        color: var(--clr-primary-alt);
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin: 0.3em 0.4em;
+        padding: 0.4em 0.8em;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: var(--clr-primary-alt);
+          color: var(--clr-primary);
+        }
+      }
+    }
+  }
 }
-.project-stack-item {
-  margin: 0.5em;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+
+@media (max-width: 900px) {
+  .project-container {
+    img {
+      width: 40%;
+      min-width: 225px;
+    }
+
+    .project-content {
+      flex-basis: 48%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .project-container {
+    flex-direction: column-reverse;
+
+    img {
+      width: 80%;
+    }
+
+    .project-content {
+      .project-link {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+
+        .link {
+          &::before {
+            bottom: 4px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -9,7 +9,7 @@
   color: var(--clr-fg);
 }
 .fa-heart {
-  color: red;
+  color: var(--clr-primary-alt);
 }
 @media (max-width: 600px) {
   .footer {

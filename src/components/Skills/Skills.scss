@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   gap: 1em;
   margin: 0 auto;
+  padding: 0px 60px;
 }
 
 .skills-list-item {
@@ -48,5 +49,14 @@
     &::before {
       transform: scaleX(1);
     }
+  }
+}
+
+// -- Media Queries -- //
+
+// -- Tablet Mode -- //
+@media only screen and (max-width: 900px) {
+  .skills-list {
+    padding: 0px 20px;
   }
 }

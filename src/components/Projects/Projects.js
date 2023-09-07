@@ -5,16 +5,12 @@ import './Projects.scss'
 
 const Projects = () => {
   if (!projects.length) return null
-
   return (
     <section id='projects' className='section projects'>
       <h2 className='section-title'>Projects</h2>
-
-      {/* <div className='projects-grid'>
-        {projects.map((project) => (
-          <ProjectContainer key={uniqid()} project={project} />
-        ))}
-      </div> */}
+      {projects.map((project) => (
+        <ProjectContainer key={uniqid()} project={project} />
+      ))}
     </section>
   )
 }

@@ -1,6 +1,11 @@
 .about {
   flex-direction: column;
   margin-top: 3em;
+
+  h1 {
+    transition: font-size 1s;
+  }
+
   .link-icon {
     margin-right: 0.8em;
   }
@@ -33,6 +38,7 @@
 }
 .about-name {
   color: var(--clr-primary);
+  display: block;
 
   .letter {
     transition: color 0.2s;
@@ -57,6 +63,7 @@
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.25em;
+  text-align: center;
 }
 .about-desc {
   font-size: 1rem;
@@ -65,12 +72,4 @@
 }
 .about-contact {
   margin-top: 2.4em;
-}
-@media (max-width: 600px) {
-  .app {
-    .about {
-      align-items: flex-start;
-      margin-top: 2em;
-    }
-  }
 }

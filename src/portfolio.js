@@ -9,10 +9,11 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'George Bastock',
   role: 'Full Stack Web Dev',
-  resume: 'https://test.com',
+  resume:
+    'https://drive.google.com/file/d/194LlK9IEy6Ar67vxsF4HvjxYE0fzRbRa/view?pli=1',
   social: {
-    linkedin: 'https://test.com',
-    github: 'https://test.com',
+    linkedin: 'https://www.linkedin.com/in/george-bastock',
+    github: 'https://github.com/georgebastock',
   },
 }
 
@@ -20,25 +21,88 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
-    description: 'test',
-    stack: ['test'],
-    sourceCode: 'https://test.com',
-    livePreview: 'https://test.com',
+    name: 'Mind Norfolk & Waveney',
+    description: 'This is a test description for testing purposes...',
+    stack: [
+      'HTML',
+      'SASS',
+      'JavaScript',
+      'Umbraco',
+      '.NET',
+      'MySQL',
+      'Git',
+      'MVC',
+    ],
+    sourceCode: '',
+    livePreview: 'https://www.norfolkandwaveneymind.org.uk/',
+    screenshot: (
+      <img
+        src='https://i.imgur.com/cwo0vbU.png'
+        alt='Mind Norfolk & Waveney Front Page'
+      />
+    ),
   },
   {
-    name: 'Project 2',
-    description: 'test',
-    stack: ['test'],
-    sourceCode: 'https://test.com',
-    livePreview: 'https://test.com',
+    name: 'Garden Care',
+    description: 'This is a test description for testing purposes...',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    sourceCode: '',
+    livePreview: 'https://garden-care.org.uk/',
+    screenshot: (
+      <img src='https://i.imgur.com/iNKRV5V.png' alt='Garden Care Front Page' />
+    ),
   },
   {
-    name: 'Project 3',
-    description: 'test',
-    stack: ['test'],
-    sourceCode: 'https://test.com',
-    livePreview: 'https://test.com',
+    name: '101 Computers',
+    description: 'This is a test description for testing purposes...',
+    stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', '.NET'],
+    sourceCode: '',
+    livePreview: 'https://101computers.co.uk/',
+    screenshot: (
+      <img
+        src='https://i.imgur.com/yZqUTnG.png'
+        alt='101 Computers Front Page'
+      />
+    ),
+  },
+  {
+    name: 'Saint Francis Xavier Sixth Form',
+    description: 'This is a test description for testing purposes...',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Kentico', '.NET', 'MySQL'],
+    sourceCode: '',
+    livePreview: 'https://www.sfx.ac.uk/',
+    screenshot: (
+      <img
+        src='https://i.imgur.com/Sb4yMVY.png'
+        alt='Saint Francis Front Page'
+      />
+    ),
+  },
+  {
+    name: 'House Exchange',
+    description: 'This is a test description for testing purposes...',
+    stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', '.NET', 'MySQL', 'Git'],
+    sourceCode: '',
+    livePreview: 'https://www.houseexchange.org.uk/',
+    screenshot: (
+      <img
+        src='https://i.imgur.com/tJuWc1q.png'
+        alt='House Exchange Front Page'
+      />
+    ),
+  },
+  {
+    name: 'Superior Freight',
+    description: 'This is a test description for testing purposes...',
+    stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', '.NET', 'MySQL', 'Git'],
+    sourceCode: '',
+    livePreview: 'https://supuk.com/',
+    screenshot: (
+      <img
+        src='https://i.imgur.com/xmnCqWT.png'
+        alt='Superior Freight Front Page'
+      />
+    ),
   },
 ]
 

@@ -1,8 +1,6 @@
 import { useContext, useState } from 'react'
 import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
-import MenuIcon from '@material-ui/icons/Menu'
-import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
 import { projects, skills, contact, about } from '../../portfolio'
 import './Navbar.scss'
@@ -52,7 +50,7 @@ const Navbar = () => {
         {resume && (
           <li className='nav-list-item'>
             <a
-              href='https://drive.google.com/file/d/194LlK9IEy6Ar67vxsF4HvjxYE0fzRbRa/view?usp=drive_link'
+              href='https://drive.google.com/file/d/1FhkQalxdfv0P53v4j7dyfCViwxt9B2kb/view?usp=drive_link'
               target='_blank'
               title='Resume'
               rel='noreferrer'
@@ -72,15 +70,6 @@ const Navbar = () => {
         aria-label='toggle theme'
       >
         {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
-      </button>
-
-      <button
-        type='button'
-        onClick={toggleNavList}
-        className='btn btn-icon nav-hamburger'
-        aria-label='toggle navigation'
-      >
-        {showNavList ? <CloseIcon /> : <MenuIcon />}
       </button>
     </nav>
   )

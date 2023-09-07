@@ -6,8 +6,8 @@
   user-select: none;
 }
 .light {
-  --clr-bg: #edf5e1;
-  --clr-bg-alt: #fff;
+  --clr-bg: #f5f6f7;
+  --clr-bg-alt: #ffffff;
   --clr-fg: #444;
   --clr-fg-alt: #222;
   --clr-primary: #05386b;
@@ -19,8 +19,8 @@
   --clr-bg-alt: rgb(22 28 41/33%);
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
-  --clr-primary: #807ae8;
-  --clr-primary-alt: #706aec;
+  --clr-primary: #735cdb;
+  --clr-primary-alt: #d3db5c;
   --shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -30,7 +30,7 @@ main {
   margin: 0 auto;
 }
 .section {
-  margin-top: 5em;
+  margin-top: 7em;
 }
 .section-title {
   text-align: center;
@@ -49,6 +49,7 @@ main {
     display: block;
     margin: 0.3em auto 0;
     width: 1.5em;
+    transition: all 0.3s;
   }
 }
 .center {

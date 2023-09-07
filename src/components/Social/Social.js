@@ -7,7 +7,7 @@ const Social = () => {
   return (
     <>
       {social && (
-        <div className='social-hud social-scroll'>
+        <div className='social-hud'>
           <ul className='social-list'>
             {social.linkedin && (
               <li className='outer-social'>

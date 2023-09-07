@@ -10,7 +10,6 @@ const Skills = () => {
       <div className='skills-list'>
         {skills.map((skill) => (
           <div key={uniqid()} className='skills-list-item'>
-            {/* {skill.img} */}
             {skill.icon}
             {skill.name}
           </div>
