@@ -37,7 +37,7 @@ const projects = [
     livePreview: 'https://www.norfolkandwaveneymind.org.uk/',
     screenshot: (
       <img
-        src='https://i.imgur.com/cwo0vbU.png'
+        src='https://i.imgur.com/J5NRreT.png'
         alt='Mind Norfolk & Waveney Front Page'
       />
     ),

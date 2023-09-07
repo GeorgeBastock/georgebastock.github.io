@@ -8,6 +8,8 @@
 
   h3 {
     transition: font-size 1s;
+    min-width: 210px;
+    line-height: 4;
   }
 
   .brand {
@@ -36,13 +38,6 @@
 
     h3 {
       font-size: 1rem;
-    }
-  }
-}
-@media (max-width: 721px) {
-  .header {
-    h3 {
-      height: 35px;
     }
   }
 }

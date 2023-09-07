@@ -1,6 +1,7 @@
 .about {
   flex-direction: column;
   margin-top: 3em;
+  min-width: 270px;
 
   h1 {
     transition: font-size 1s;
@@ -72,4 +73,23 @@
 }
 .about-contact {
   margin-top: 2.4em;
+}
+
+// -- Media Queries -- //
+
+// -- Tablet Mode -- //
+@media only screen and (max-width: 900px) {
+  .about-name {
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-role {
+    font-size: 14px;
+  }
+
+  .about-typed {
+    font-size: 14px;
+  }
 }
