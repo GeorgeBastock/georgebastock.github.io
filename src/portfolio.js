@@ -22,7 +22,8 @@ const projects = [
   // if there are no projects, Projects section won't show up
   {
     name: 'Mind Norfolk & Waveney',
-    description: 'This is a test description for testing purposes...',
+    description:
+      'Built from the ground up with multiple backend modules within Umbraco for mind workers & users to manage finance, track clients, raising tickets and more. Mind helps across England and Wales by making mental health an everyday priority.',
     stack: [
       'HTML',
       'SASS',
@@ -44,7 +45,8 @@ const projects = [
   },
   {
     name: 'Garden Care',
-    description: 'This is a test description for testing purposes...',
+    description:
+      'Aiming to help a wide audience looking for advice on how to deal safely with slugs, weed control in their first garden, concerns about insecticides and bee health, this site hopes to be a valuable and informative resource.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     sourceCode: '',
     livePreview: 'https://garden-care.org.uk/',
@@ -54,7 +56,8 @@ const projects = [
   },
   {
     name: '101 Computers',
-    description: 'This is a test description for testing purposes...',
+    description:
+      'Upgraded a local business to be able to book appointments, setup cloud backups, and provide office 365 support all from there website while all content on the site is able to be edited to there needs.',
     stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', '.NET'],
     sourceCode: '',
     livePreview: 'https://101computers.co.uk/',
@@ -67,7 +70,8 @@ const projects = [
   },
   {
     name: 'Saint Francis Xavier Sixth Form',
-    description: 'This is a test description for testing purposes...',
+    description:
+      'SFX Sixth Form provides easy to read infomation on all courses they offer built in mind with a simple to use filter and fast search bar',
     stack: ['HTML', 'CSS', 'JavaScript', 'Kentico', '.NET', 'MySQL'],
     sourceCode: '',
     livePreview: 'https://www.sfx.ac.uk/',
@@ -80,7 +84,8 @@ const projects = [
   },
   {
     name: 'House Exchange',
-    description: 'This is a test description for testing purposes...',
+    description:
+      'House Exchange is the best mutual exchange service for finding a home swap. Features include a secure user login system, property listings and using the power of Umbraco supports multi language.',
     stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', '.NET', 'MySQL', 'Git'],
     sourceCode: '',
     livePreview: 'https://www.houseexchange.org.uk/',
@@ -93,7 +98,8 @@ const projects = [
   },
   {
     name: 'Superior Freight',
-    description: 'This is a test description for testing purposes...',
+    description:
+      'A company gateway to access many of the services they provide including courier express services, project forwarding ocean freight, air freight road domestic, training bespoke solutions and more.',
     stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', '.NET', 'MySQL', 'Git'],
     sourceCode: '',
     livePreview: 'https://supuk.com/',
