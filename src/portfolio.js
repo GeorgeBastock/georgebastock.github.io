@@ -23,31 +23,28 @@ const projects = [
   {
     name: 'Mind Norfolk & Waveney',
     description:
-      'Built from the ground up with multiple backend modules within Umbraco for mind workers & users to manage finance, track clients, raising tickets and more. Mind helps across England and Wales by making mental health an everyday priority.',
+      'Built from the ground up using multiple backend modules within Kentico for mind users to manage finance, tracking clients, raising tickets and more. Mind helps across England and Wales by making mental health an everyday priority.',
     stack: [
       'HTML',
       'SASS',
       'JavaScript',
-      'Umbraco',
-      '.NET',
-      'MySQL',
+      'Kentico',
+      'ASP.NET',
+      'IIS',
       'Git',
       'MVC',
     ],
     sourceCode: '',
     livePreview: 'https://www.norfolkandwaveneymind.org.uk/',
     screenshot: (
-      <img
-        src='https://i.imgur.com/J5NRreT.png'
-        alt='Mind Norfolk & Waveney Front Page'
-      />
+      <img src='https://i.imgur.com/J5NRreT.png' alt='Mind Front Page' />
     ),
   },
   {
     name: 'Garden Care',
     description:
       'Aiming to help a wide audience looking for advice on how to deal safely with slugs, weed control in their first garden, concerns about insecticides and bee health, this site hopes to be a valuable and informative resource.',
-    stack: ['HTML', 'CSS', 'JavaScript'],
+    stack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     sourceCode: '',
     livePreview: 'https://garden-care.org.uk/',
     screenshot: (
@@ -57,8 +54,8 @@ const projects = [
   {
     name: '101 Computers',
     description:
-      'Upgraded a local business to be able to book appointments, setup cloud backups, and provide office 365 support all from there website while all content on the site is able to be edited to there needs.',
-    stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', '.NET'],
+      'Upgraded a local business to be able to book appointments, setup cloud backups, and provide office 365 support all from there website while all content is highly customisable.',
+    stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', 'ASP.NET', 'Bootstrap'],
     sourceCode: '',
     livePreview: 'https://101computers.co.uk/',
     screenshot: (
@@ -71,8 +68,8 @@ const projects = [
   {
     name: 'Saint Francis Xavier Sixth Form',
     description:
-      'SFX Sixth Form provides easy to read infomation on all courses they offer built in mind with a simple to use filter and fast search bar',
-    stack: ['HTML', 'CSS', 'JavaScript', 'Kentico', '.NET', 'MySQL'],
+      'Made specifically to provide easy to read infomation on all courses the school offers built in mind with a simple to use filter and fast acting search bar',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Kentico', 'ASP.NET', 'MySQL', 'IIS'],
     sourceCode: '',
     livePreview: 'https://www.sfx.ac.uk/',
     screenshot: (
@@ -85,8 +82,18 @@ const projects = [
   {
     name: 'House Exchange',
     description:
-      'House Exchange is the best mutual exchange service for finding a home swap. Features include a secure user login system, property listings and using the power of Umbraco supports multi language.',
-    stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', '.NET', 'MySQL', 'Git'],
+      'House Exchange is the best mutual exchange service for finding a home swap. Features include a secure user login system, property listings and using the full power of Umbraco supports multi language versions.',
+    stack: [
+      'HTML',
+      'SASS',
+      'JavaScript',
+      'Umbraco',
+      'ASP.NET',
+      'MySQL',
+      'IIS',
+      'Git',
+      'Bootstrap',
+    ],
     sourceCode: '',
     livePreview: 'https://www.houseexchange.org.uk/',
     screenshot: (
@@ -100,7 +107,16 @@ const projects = [
     name: 'Superior Freight',
     description:
       'A company gateway to access many of the services they provide including courier express services, project forwarding ocean freight, air freight road domestic, training bespoke solutions and more.',
-    stack: ['HTML', 'SASS', 'JavaScript', 'Umbraco', '.NET', 'MySQL', 'Git'],
+    stack: [
+      'HTML',
+      'SASS',
+      'JavaScript',
+      'Umbraco',
+      '.NET',
+      'MySQL',
+      'IIS',
+      'Git',
+    ],
     sourceCode: '',
     livePreview: 'https://supuk.com/',
     screenshot: (
@@ -110,11 +126,33 @@ const projects = [
       />
     ),
   },
+  {
+    name: 'Moneyfacts Group',
+    description:
+      'A business first companion site to go along side the consumer comparison site that acts as a portal to everything analyser related.',
+    stack: [
+      'HTML',
+      'SASS',
+      'JavaScript',
+      'Umbraco',
+      'ASP.NET',
+      'MySQL',
+      'IIS',
+      'Git',
+      'Bootstrap',
+    ],
+    sourceCode: '',
+    livePreview: 'https://www.moneyfactsgroup.co.uk/',
+    screenshot: (
+      <img
+        src='https://i.imgur.com/tBFIVIF.png'
+        alt='Superior Freight Front Page'
+      />
+    ),
+  },
 ]
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
   {
     name: 'HTML',
     img: (
@@ -126,7 +164,7 @@ const skills = [
     icon: <i className='devicon-html5-plain colored' />,
   },
   {
-    name: 'CSS',
+    name: 'CSS/SCSS',
     img: (
       <img
         src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
@@ -134,16 +172,6 @@ const skills = [
       />
     ),
     icon: <i className='devicon-css3-plain colored' />,
-  },
-  {
-    name: 'SASS/SCSS',
-    img: (
-      <img
-        src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'
-        alt='SASS/SCSS'
-      />
-    ),
-    icon: <i className='devicon-sass-original colored' />,
   },
   {
     name: 'JavaScript',
@@ -201,6 +229,11 @@ const skills = [
     icon: <i className='devicon-microsoftsqlserver-plain colored' />,
   },
   {
+    name: 'Kentico',
+    img: '',
+    icon: <i className='devicon-csharp-plain colored' />,
+  },
+  {
     name: 'Node.js',
     img: (
       <img
@@ -233,7 +266,7 @@ const skills = [
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
+  // email is optional
   email: 'gbastock@outlook.com',
 }
 
