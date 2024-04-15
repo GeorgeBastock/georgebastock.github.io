@@ -10,7 +10,7 @@ const about = {
   name: 'George Bastock',
   role: 'Full Stack Web Dev',
   resume:
-    'https://drive.google.com/file/d/194LlK9IEy6Ar67vxsF4HvjxYE0fzRbRa/view?pli=1',
+    'https://drive.google.com/file/d/1aD89iV7_m88ciFaC1EgcWLanxTzi6HHN/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/george-bastock',
     github: 'https://github.com/georgebastock',

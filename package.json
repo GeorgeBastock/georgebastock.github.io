@@ -21,12 +21,13 @@
   },
   "scripts": {
     "start": "react-scripts start --openssl-legacy-provider",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build --openssl-legacy-provider",
     "test": "react-scripts test",
     "eject": "react-scripts eject --openssl-legacy-provider",
     "lint": "eslint .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|scss|css|md)\"",
-    "deploy": "gh-pages -d build"
+    "format": "prettier --write \"**/*.+(js|jsx|json|scss|css|md)\""
   },
   "browserslist": {
     "production": [
