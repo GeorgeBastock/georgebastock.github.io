@@ -50,7 +50,7 @@ const Navbar = () => {
         {resume && (
           <li className='nav-list-item'>
             <a
-              href='https://drive.google.com/file/d/1FhkQalxdfv0P53v4j7dyfCViwxt9B2kb/view?usp=drive_link'
+              href='https://drive.google.com/file/d/1aD89iV7_m88ciFaC1EgcWLanxTzi6HHN/view?usp=sharing'
               target='_blank'
               title='Resume'
               rel='noreferrer'

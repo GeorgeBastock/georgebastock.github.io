@@ -49,7 +49,7 @@ const About = () => {
         </a>
         {resume && (
           <a
-            href='https://drive.google.com/file/d/106rEYZkzyo_WOx46BW0hmwpZsSWejBQB/view?usp=sharing'
+            href='https://drive.google.com/file/d/1aD89iV7_m88ciFaC1EgcWLanxTzi6HHN/view?usp=sharing'
             target='_blank'
             title='Resume'
             rel='noreferrer'
